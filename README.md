@@ -111,4 +111,5 @@ millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 LEVEL 8 ---> LEVEL 9
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cat data.txt | sort | uniq -u
 password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
