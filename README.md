@@ -86,6 +86,15 @@ k - Kilobytes
 M - Megabytes
 G - Gigabytes
 
-The next condition is that the file must not be executable 
+The next condition is that the file must not be executable, so we just type ! -executable.
+
+Lastly is the human readable, humans read in unicode ASCII, so we will find file type with ASCII.
+
+Below is the code
+
+![method 1](https://user-images.githubusercontent.com/41103533/109790311-398f8d80-7c4c-11eb-8f1c-2abae51ef26f.PNG)
+
 
 Password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+
