@@ -113,3 +113,9 @@ LEVEL 8 ---> LEVEL 9
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cat data.txt | sort | uniq -u
 password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+LEVEL 9 ---> LEVEL 10
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Strings : Print the strings of printable characters in files.
+strings data.txt
+Password : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
