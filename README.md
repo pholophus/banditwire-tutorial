@@ -104,4 +104,11 @@ find / -group bandit6 -user bandit7 -size 33c
 
 Password : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
+LEVEL 7 ---> LEVEL 8
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+grep "millionth" data.txt
+millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
+LEVEL 8 ---> LEVEL 9
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
