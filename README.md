@@ -125,3 +125,8 @@ LEVEL 10 ---> LEVEL 11
 
 base64 -d data.txt
 The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+LEVEL 11 ---> LEVEL 12
+
+echo "5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh" | tr '[a-z][A-Z]' '[n-za-m][N-ZA-M]'
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
