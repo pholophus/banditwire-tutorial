@@ -119,3 +119,9 @@ LEVEL 9 ---> LEVEL 10
 Strings : Print the strings of printable characters in files.
 strings data.txt
 Password : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+LEVEL 10 ---> LEVEL 11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+base64 -d data.txt
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
