@@ -69,6 +69,23 @@ From the image above, we know that the only file with ASCII type is file 7, so w
 
 Password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
+LEVEL 5 ---> LEVEL 6
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+The goals of level 5 is to learn to find a file based on several things such as size etc. The question ask to search a file where has all of the following properties:
+
+human-readable
+1033 bytes in size
+not executable
+
+For this, we can use the file command, first to search file by file size, the file size is 1033 in bytes, so we type file . -size 1033c, the suffix c represents byte, the other available suffixes to our disposal are:
+b - 512-byte blocks (this is the default if no suffix is used)
+c - bytes
+w - two-byte words
+k - Kilobytes
+M - Megabytes
+G - Gigabytes
+
+The next condition is that the file must not be executable 
 
 Password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
