@@ -62,7 +62,8 @@ The goal of level 4 is to learn check the type of files in a director and to kno
 
 To know the details of a file, we can use the command file, it determine the file type. Becasue in the directory there are about 10 files, rather than searching each one, we can use the * which will automatically search all files based on its number.
 
-![method 1](https://user-images.githubusercontent.com/41103533/109599355-023eb500-7b56-11eb-8f19-7b8ba92fa93d.PNG)
+![method 1](https://user-images.githubusercontent.com/41103533/109768656-25d82d00-7c34-11eb-9425-7c9d007b05a5.PNG)
+
 
 From the image above, we know that the only file with ASCII type is file 7, so we will read file 07 and retrieve the password. 
 
