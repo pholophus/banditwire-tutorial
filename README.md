@@ -97,6 +97,11 @@ Below is the code
 
 Password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
+LEVEL 6 ---> LEVEL 7
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+find / -group bandit6 -user bandit7 -size 33c
+
 Password : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
 
