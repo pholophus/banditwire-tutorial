@@ -159,28 +159,70 @@ Password : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
 LEVEL 10 ---> LEVEL 11
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The goal of this level is to learn encode and decode a file. To encode or decode standard input/output or any file content, Linux uses base64 encoding and decoding system.
+
+Syntax:
+base64 [OPTION] [INFILE] [OUTFILE]
+
+To decode, we are going o use 
+
+-d or –decode
 
 base64 -d data.txt
+
+Result
+------
 The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
 LEVEL 11 ---> LEVEL 12
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The goal of this level is to learn to shift/replace characters according to a number. And for this question, we need to shift the characters by 13.
+
+The tr command in UNIX is a command line utility for translating or deleting characters. t supports a range of transformations including uppercase to lowercase, squeezing repeating characters, deleting specific characters and basic find and replace.
+
+To shift/replace the characters by thirteen, we will write the first set as [a-z], this will be the input, the second set we will write as [n-za-m], this will be the output. TR command will convert the letter a with n, b with o and so on. 
 
 echo "5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh" | tr '[a-z][A-Z]' '[n-za-m][N-ZA-M]'
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
 LEVEL 12 ---> LEVEL 13
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The target of this level is to learn about file compression. The question says that the file is a hexdump of a file that has been repeatedly compressed. So firstly we will need to use command 'xxd' to reverse hexdump. After that, we will be given unreadable characters, because the question says the file was compressed repeatedly, so to know what kind of compression it is, we will use the 'file' command to get the details of the file.
+
+For this question, there are 3 types of compression,
+
+First: bzip2
+------------
 data2: bzip2 compressed data, block size = 900k
- bzip2 -d data.bz2
+bzip2 -d data.bz2
+
+Second: tar
+-----------
 data5.bin: POSIX tar archive (GNU)
- gzip -d data4.gz
-data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
 tar -xvf data5.tar
-8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Third: gzip
+-----------
+gzip -d data4.gz
+data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+
+Result:
+-------
+Password: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+LEVEL 13 ---> 14
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The goal for this level is to learn how to connect using private SSH key.
+
+First we need to save the private SSH key in a pem file. A PEM file is a Base64-encoded certificate file used to authenticate a secure website. It may contain a private key, certificate authority (CA) server certificate, or other various certificates that make up the trust chain. PEM files typically imported from a Unix-based Apache Web server and compatible with OpenSSL applications.
+
+Later to connect, we will type
+
+ssh -i "name of pem file".pem bandit14@ bandit.labs.overthewire.org -p 2220
 
 LEVEL 14 ---> 15 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The goal of this level is to send info through a connection. To do this, we will use the command nc. ncat or nc is networking utility with functionality similar to cat command but for network. It  is a general purpose CLI tool for reading, writing, redirecting data across a network. It is  designed to be a reliable back-end tool that can be used with scripts or other programs.
 
 echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc 127.0.0.1 30000
 Correct!
@@ -188,7 +230,7 @@ BfMYroe26WYalil77FoDi9qh59eK5xNr
 
 LEVEL 15 ---> LEVEL 16
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" |openssl s_client -connect 127.0.0.1:30001 -ign_eof
+echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" | openssl s_client -connect 127.0.0.1:30001 -ign_eof
 cluFn7wTiGryunymYOu4RcffSxQluehd
 
 LEVEL 16 ---> LEVEL 17
