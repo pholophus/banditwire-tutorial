@@ -141,7 +141,14 @@ millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 LEVEL 8 ---> LEVEL 9
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The goal of the level is to search for a keyword where it only occurs once.
+
+To search for the keyword, we can use the command UNIQ, the UNIQ command filters out repeated lines in a file. But it can only detect adjacent duplicate lines. Also to only print out uniq lines, we will use the option -u. And the keywords in the file is not in order. So we need to sort the file first before we can use the uniq command. The command to sort the data  inside the file is SORT. SORT command is used to sort a file, arranging the records in a particular order. By default, the sort command sorts file assuming the contents are ASCII. Using options in sort command, it can also be used to sort numerically.
+
 cat data.txt | sort | uniq -u
+
+Result:
+-------
 password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 LEVEL 9 ---> LEVEL 10
