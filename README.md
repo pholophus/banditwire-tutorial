@@ -154,3 +154,7 @@ LEVEL 15 ---> LEVEL 16
 echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" |openssl s_client -connect 127.0.0.1:30001 -ign_eof
 cluFn7wTiGryunymYOu4RcffSxQluehd
 
+LEVEL 16 ---> LEVEL 17
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ echo "cluFn7wTiGryunymYOu4RcffSxQluehd" | openssl s_client -connect 127.0.0.1:31790 -ign_eof
+
