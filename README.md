@@ -131,3 +131,13 @@ LEVEL 11 ---> LEVEL 12
 
 echo "5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh" | tr '[a-z][A-Z]' '[n-za-m][N-ZA-M]'
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+LEVEL 12 ---> LEVEL 13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data2: bzip2 compressed data, block size = 900k
+ bzip2 -d data.bz2
+data5.bin: POSIX tar archive (GNU)
+ gzip -d data4.gz
+data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+tar -xvf data5.tar
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
