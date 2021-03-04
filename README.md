@@ -148,3 +148,9 @@ LEVEL 14 ---> 15
 echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc 127.0.0.1 30000
 Correct!
 BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+LEVEL 15 ---> LEVEL 16
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" |openssl s_client -connect 127.0.0.1:30001 -ign_eof
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
