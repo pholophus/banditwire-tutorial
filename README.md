@@ -99,14 +99,44 @@ Password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 LEVEL 6 ---> LEVEL 7
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The target of this level is to learn to find a file based on its owner and group. 
 
+Find file by group
+------------------
+The syntax is:
+find directory-location -group {group-name} -name {file-name}
+
+Where,
+directory-location : Locate the file in this directory path.
+-group {group-name} : Find the file belongs to group-name.
+-name {file-name} : The file name or a search pattern
+
+Find file owned by user
+-----------------------
+The syntax is:
+find directory-location -user {username} -name {file-name}
+
+Where,
+directory-location : Locate files or directories in this directory location.
+-user { user-name } : Find the file belongs to user.
+-name {file-name} : File name or pattern.
+
+So the full command for this level is:
 find / -group bandit6 -user bandit7 -size 33c
 
 Password : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
 LEVEL 7 ---> LEVEL 8
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The goal for this level is to learn search a keyword in a file. The command that can be use for this is the GREP command.
+
+Grep is an acronym that stands for Global Regular Expression Print.
+The grep command consists of three parts in its most basic form. The first part starts with grep, followed by the pattern that you are searching for. After the string comes the file name that the grep searches through.
+
 grep "millionth" data.txt
+
+Result: 
+-------
 millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 LEVEL 8 ---> LEVEL 9
