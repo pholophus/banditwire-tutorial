@@ -156,5 +156,6 @@ cluFn7wTiGryunymYOu4RcffSxQluehd
 
 LEVEL 16 ---> LEVEL 17
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+nmap -sV -p 31000-32000 127.0.0.1  -v
  echo "cluFn7wTiGryunymYOu4RcffSxQluehd" | openssl s_client -connect 127.0.0.1:31790 -ign_eof
 
